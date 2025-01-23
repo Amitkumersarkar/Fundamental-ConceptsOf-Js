@@ -17,3 +17,15 @@ const addSixtyFive = num => num + 65;
 const isEven = x => x % 2 == 0;
 // multi parameter arrow function 
 const addThree = (x, y, z) => x + y + z;
+
+// multi line arrow function
+
+const doMath = (num1, num2) => {
+    const sum = num1 + num2;
+    return sum;
+}
+
+// spread operator 
+const newNumbers = numbers;
+numbers.push(99);
+console.log(newNumbers);
