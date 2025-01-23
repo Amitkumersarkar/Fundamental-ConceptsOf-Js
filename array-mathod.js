@@ -15,3 +15,9 @@ console.log(prices);
 
 products.forEach(product => console.log(product));
 products.forEach(product => console.log(product.brand));
+
+// Filter will return an array if the array match the condition
+
+const cheap = products.filter(product => product.price <= 5000);
+console.log(cheap);
+
