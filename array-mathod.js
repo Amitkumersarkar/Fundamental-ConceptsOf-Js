@@ -7,17 +7,25 @@ const products = [
 ];
 
 const brands = products.map(product => product.brand);
-console.log(brands);
+// console.log(brands);
 const prices = products.map(product => product.price);
-console.log(prices);
+// console.log(prices);
 
 // forEach used if something not returnable
 
-products.forEach(product => console.log(product));
-products.forEach(product => console.log(product.brand));
+// products.forEach(product => console.log(product));
+// products.forEach(product => console.log(product.brand));
 
+products.forEach(product => {
+
+});
 // Filter will return an array if the array match the condition
 
 const cheap = products.filter(product => product.price <= 5000);
-console.log(cheap);
+// console.log(cheap);
+const specificName = products.filter(p => p.name.includes('n'));
+// find used when the condition are match then it's give the fist one
+
+const special = products.find(p => p.name.includes('n'));
+console.log(special);
 
